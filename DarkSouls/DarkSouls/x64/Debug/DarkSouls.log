@@ -1,2 +1,5 @@
 ﻿  Main.cpp
+E:\GitHub\DarkSouls\DarkSouls\DarkSouls\RandomNumberGenerator.h(5,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Player.cpp
+  Generating Code...
   DarkSouls.vcxproj -> E:\GitHub\DarkSouls\DarkSouls\x64\Debug\DarkSouls.exe

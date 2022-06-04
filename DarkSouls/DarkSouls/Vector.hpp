@@ -49,5 +49,28 @@ Vector<T>::Vector()
 template < typename T>
 Vector<T>::Vector(const Vector& other)
 {
-
+	free();
+	copyFrom(other);
+}
+template < typename T>
+T& Vector<T>::operator=(const Vector& other)
+{
+	if (this != &other)
+	{
+		free();
+		copyFrom(other);
+	}
+	return *this;
+}
+template < typename T>
+Vector<T>::~Vector()
+{
+	free();
+}
+template < typename T>
+void Vector<T>::add(const T& item)
+{
+	if (capacity = numberOfElements)
+		resize();
+	arr[numberOfElements] = item;
 }

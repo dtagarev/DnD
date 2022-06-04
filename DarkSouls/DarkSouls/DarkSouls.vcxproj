@@ -128,9 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EnumClasses.h" />
+    <ClInclude Include="NPC.h" />
     <ClInclude Include="Pair.hpp" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="RandomNumberGenerator.h" />
     <ClInclude Include="Vector.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
