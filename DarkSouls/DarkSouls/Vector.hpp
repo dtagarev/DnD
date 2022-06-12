@@ -14,7 +14,10 @@ public:
 	T& operator=(const Vector& other);
 	~Vector();
 
+	const size_t getNumberOfElements()const;
+	const T* gerArrPointer() const;
 	void add(const T& item);
+	void add(const T&& item);
 };
 template < typename T>
 void Vector<T>::free()
@@ -33,7 +36,7 @@ void Vector<T>::copyFrom(const Vector& other)
 template < typename T>
 void Vector<T>::resize()
 {
-	temp = new T[capacity *= 2];
+	T* temp = new T[capacity *= 2];
 	for (size_t i = 0; i < numberOfElements; i++)
 		temp[i] = arr[i];
 	free();
@@ -67,8 +70,26 @@ Vector<T>::~Vector()
 {
 	free();
 }
+template<typename T>
+inline const size_t Vector<T>::getNumberOfElements() const
+{
+	return numberOfElements;
+}
+template<typename T>
+inline const T* Vector<T>::gerArrPointer() const
+{
+	return arr;
+}
 template < typename T>
 void Vector<T>::add(const T& item)
+{
+	if (capacity = numberOfElements)
+		resize();
+	arr[numberOfElements] = item;
+}
+
+template<typename T>
+inline void Vector<T>::add(const T&& item)
 {
 	if (capacity = numberOfElements)
 		resize();

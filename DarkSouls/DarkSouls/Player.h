@@ -3,7 +3,6 @@
 #include "EnumClasses.h"
 class Player : NPC
 {
-	Race race;
 	Weapons weapon = Weapons::GreatAxe;
 	Spells spell = Spells::FireBall;
 	Armour armour = Armour::RustyArmour;

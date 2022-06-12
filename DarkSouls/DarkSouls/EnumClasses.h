@@ -1,6 +1,7 @@
 #pragma once
 enum class Race
 {
+	Monster,
 	Human,
 	Mage,
 	Warrior,

@@ -21,6 +21,27 @@
     <ClCompile Include="Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="myString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponsClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmourClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellsClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IngameWeapons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IngameSpells.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IngameArmour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Pair.hpp">
@@ -39,6 +60,30 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RandomNumberGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="myString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponsClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IngameWeapons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmourClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellsClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IngameItems.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IngameSpells.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IngameArmour.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
