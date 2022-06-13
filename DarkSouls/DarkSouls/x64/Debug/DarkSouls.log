@@ -1,5 +1,4 @@
-﻿  IngameSpells.cpp
-  IngameWeapons.cpp
+﻿  Inventory.cpp
   WeaponsClass.cpp
   Generating Code...
   DarkSouls.vcxproj -> E:\GitHub\DarkSouls\DarkSouls\x64\Debug\DarkSouls.exe

@@ -15,75 +15,87 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\IngameSpells.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\IngameWeapons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Inventory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\myString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NPC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SpellsClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WeaponsClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ArmourClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\IngameArmour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="myString.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="WeaponsClass.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ArmourClass.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SpellsClass.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IngameWeapons.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IngameSpells.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IngameArmour.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Pair.hpp">
+    <ClInclude Include="Templates\Pair.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Vector.hpp">
+    <ClInclude Include="Templates\Vector.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NPC.h">
+    <ClInclude Include="Headers\IngameSpells.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Player.h">
+    <ClInclude Include="Headers\IngameWeapons.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="EnumClasses.h">
+    <ClInclude Include="Headers\Inventory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RandomNumberGenerator.h">
+    <ClInclude Include="Headers\myString.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="myString.h">
+    <ClInclude Include="Headers\NPC.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="WeaponsClass.h">
+    <ClInclude Include="Headers\Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="IngameWeapons.h">
+    <ClInclude Include="Headers\RandomNumberGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ArmourClass.h">
+    <ClInclude Include="Headers\SpellsClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SpellsClass.h">
+    <ClInclude Include="Headers\WeaponsClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="IngameItems.h">
+    <ClInclude Include="Headers\ArmourClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="IngameSpells.h">
+    <ClInclude Include="Headers\AvailableRaces.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="IngameArmour.h">
+    <ClInclude Include="Headers\IngameArmour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\IngameItems.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Monster.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

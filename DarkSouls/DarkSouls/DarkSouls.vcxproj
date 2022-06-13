@@ -18,6 +18,37 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Source\ArmourClass.cpp" />
+    <ClCompile Include="Source\IngameArmour.cpp" />
+    <ClCompile Include="Source\IngameSpells.cpp" />
+    <ClCompile Include="Source\IngameWeapons.cpp" />
+    <ClCompile Include="Source\Inventory.cpp" />
+    <ClCompile Include="Source\myString.cpp" />
+    <ClCompile Include="Source\NPC.cpp" />
+    <ClCompile Include="Source\Player.cpp" />
+    <ClCompile Include="Source\SpellsClass.cpp" />
+    <ClCompile Include="Source\WeaponsClass.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\ArmourClass.h" />
+    <ClInclude Include="Headers\AvailableRaces.h" />
+    <ClInclude Include="Headers\IngameArmour.h" />
+    <ClInclude Include="Headers\IngameItems.h" />
+    <ClInclude Include="Headers\IngameSpells.h" />
+    <ClInclude Include="Headers\IngameWeapons.h" />
+    <ClInclude Include="Headers\Inventory.h" />
+    <ClInclude Include="Headers\Monster.h" />
+    <ClInclude Include="Headers\myString.h" />
+    <ClInclude Include="Headers\NPC.h" />
+    <ClInclude Include="Headers\Player.h" />
+    <ClInclude Include="Headers\RandomNumberGenerator.h" />
+    <ClInclude Include="Headers\SpellsClass.h" />
+    <ClInclude Include="Headers\WeaponsClass.h" />
+    <ClInclude Include="Templates\Pair.hpp" />
+    <ClInclude Include="Templates\Vector.hpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,33 +157,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="ArmourClass.cpp" />
-    <ClCompile Include="IngameArmour.cpp" />
-    <ClCompile Include="IngameSpells.cpp" />
-    <ClCompile Include="IngameWeapons.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="myString.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="SpellsClass.cpp" />
-    <ClCompile Include="WeaponsClass.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ArmourClass.h" />
-    <ClInclude Include="EnumClasses.h" />
-    <ClInclude Include="IngameArmour.h" />
-    <ClInclude Include="IngameItems.h" />
-    <ClInclude Include="IngameSpells.h" />
-    <ClInclude Include="IngameWeapons.h" />
-    <ClInclude Include="myString.h" />
-    <ClInclude Include="NPC.h" />
-    <ClInclude Include="Pair.hpp" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="RandomNumberGenerator.h" />
-    <ClInclude Include="SpellsClass.h" />
-    <ClInclude Include="Vector.hpp" />
-    <ClInclude Include="WeaponsClass.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
