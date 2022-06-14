@@ -4,13 +4,16 @@
 
 class Item
 {
+	int neededLvl;
 	MyString name;
 
 public:
 	Item();
-	Item(const char* name);
+	Item(const char* name, int neededLvl);
 	virtual Item* clone() const = 0;
-	Item* returnItem(const char*) const;
+	//Item* returnItem() const;
+	const MyString& getName() const;
+	bool compareName(const char*);
 	virtual ~Item() = default;
 
 	std::ofstream& writeToFile(std::ofstream& f);

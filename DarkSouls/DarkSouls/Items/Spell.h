@@ -10,8 +10,7 @@ class Spell : Item
 public:
 	Item* clone() const override;
 	Spell();
-	Spell(const char* name, size_t dmg);
-	const MyString& getName() const;
+	Spell(const char* name, size_t dmg, int neededLvl);
 	const size_t getDamageScaler() const;
 	
 	//void setName(const char* name);

@@ -6,10 +6,10 @@ Item* Spell::clone() const
 	return newItem;
 }
 
-Spell::Spell() : Spell("No name", 0)
+Spell::Spell() : Spell("No name", 0, 0)
 {}
 
-Spell::Spell(const char* name, size_t dmg) : Creature(name)
+Spell::Spell(const char* name, size_t dmg, int neededLvl) : Item(name, neededLvl)
 {
 	damageScalerInPrc = dmg;
 }

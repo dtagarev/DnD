@@ -1,6 +1,6 @@
 #include "Player.h"
 
-Player::Player(Race race)
+Player::Player(Race race) : Creature()
 {
 	this->race = race;
 	Vector<double> stats = determineRace(race);
@@ -25,31 +25,24 @@ void Player::takeDmg(double dmg)
 	health -= dmg;
 }
 
-void Player::lvlUp(int incStrength, int incHealth, int incMana)
-{}
+void Player::lvlUp(size_t upStrength, size_t upHealth, size_t upMana)
+{
+	maxHealth += upHealth;
+	maxMana += upMana;
+	strength += upStrength;
+	level += 1;
+}
 
-//const size_t Player::getMaxHealth() const
-//{
-//	return maxHealth;
-//}
-//
-//const size_t Player::getMaxMana() const
-//{
-//	return maxMana;
-//}
-//
-//const double Player::getHealth() const
-//{
-//	return health;
-//}
-//
-//const double Player::getMana() const
-//{
-//	return mana;
-//}
-//
-//const double Player::getStrength() const
-//{
-//	return strength;
-//}
+void Player::heal(size_t plusHealth)
+{
+	health += plusHealth;
+	if (health > maxHealth)
+		health = maxHealth;
+}
 
+void Player::regenMana(size_t plusMana)
+{
+	mana += plusMana;
+	if (mana > maxMana)
+		mana = maxMana;
+}

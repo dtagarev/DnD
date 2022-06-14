@@ -9,8 +9,7 @@ class Armour : Item
 public:
 	Item* clone() const override;
 	Armour();
-	Armour(const char* name, size_t block);
-	const MyString& getName() const;
+	Armour(const char* name, size_t block, int neededLvl);
 	const size_t getBlockPercentage() const;
 
 	//void setName(const char* name);

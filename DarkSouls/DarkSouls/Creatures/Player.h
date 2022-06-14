@@ -1,7 +1,9 @@
 #pragma once
 #include "Creature.h" 
 #include "../Common/Vector.hpp"
-
+#include "../Items/Weapon.h"
+#include "../Items/Armour.h"
+#include "../Items/Spell.h"
 enum Race {
 	Human,
 	Wizard,
@@ -49,15 +51,12 @@ class Player : Creature
 	Race race;
 
 public:
-	Player(Race race);
+	Player(Race race); // da dobavq itemite
 	double meleeAttack() override;
 	double magicAttack() override;
 	void takeDmg(double dmg) override;
-	void lvlUp(int upHealth, int upMana, int upStrength) override;
-
-	//const size_t getMaxHealth() const override;
-	//const size_t getMaxMana() const override;
-	//const double getHealth() const override;
-	//const double getMana() const override;
-	//const double getStrength() const override;
+	void lvlUp(size_t upHealth, size_t upMana, size_t upStrength) override;
+	
+	void heal(size_t plusHealth);
+	void regenMana(size_t plusMana);
 };

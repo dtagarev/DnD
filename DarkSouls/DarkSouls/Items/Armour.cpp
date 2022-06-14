@@ -6,10 +6,10 @@ Item* Armour::clone() const
 	return newItem;
 }
 
-Armour::Armour() : Armour("No name", 0)
+Armour::Armour() : Armour("No name", 0, 0)
 {}
 
-Armour::Armour(const char* name, size_t block) : Item(name)
+Armour::Armour(const char* name, size_t block, int neededLvl) : Item(name, neededLvl)
 {
 	blockPercentage = block;
 }

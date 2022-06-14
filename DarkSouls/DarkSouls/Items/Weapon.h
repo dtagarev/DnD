@@ -9,9 +9,8 @@ class Weapon : Item
 public:
 	Item* clone() const override;
 	Weapon();
-	Weapon(const char* name, size_t dmg);
+	Weapon(const char* name, size_t dmg, int neededLvl);
 	const size_t getDamageScaler() const;
-	bool compareName(const char*);
 
 	//void setName(const char* name);
 	//void setDamageScaler(size_t dmg);

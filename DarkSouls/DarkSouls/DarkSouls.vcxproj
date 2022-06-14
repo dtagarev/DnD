@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="Common\MyString.cpp" />
     <ClCompile Include="Creatures\Creature.cpp" />
+    <ClCompile Include="Creatures\Monster.cpp" />
     <ClCompile Include="Creatures\Player.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Items\Armour.cpp" />
