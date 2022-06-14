@@ -19,35 +19,29 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Common\MyString.cpp" />
+    <ClCompile Include="Creatures\Creature.cpp" />
+    <ClCompile Include="Creatures\Player.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Items\Armour.cpp" />
+    <ClCompile Include="Items\Item.cpp" />
+    <ClCompile Include="Items\Spell.cpp" />
+    <ClCompile Include="Items\Weapon.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Source\ArmourClass.cpp" />
-    <ClCompile Include="Source\IngameArmour.cpp" />
-    <ClCompile Include="Source\IngameSpells.cpp" />
-    <ClCompile Include="Source\IngameWeapons.cpp" />
-    <ClCompile Include="Source\Inventory.cpp" />
-    <ClCompile Include="Source\myString.cpp" />
-    <ClCompile Include="Source\NPC.cpp" />
-    <ClCompile Include="Source\Player.cpp" />
-    <ClCompile Include="Source\SpellsClass.cpp" />
-    <ClCompile Include="Source\WeaponsClass.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Headers\ArmourClass.h" />
-    <ClInclude Include="Headers\AvailableRaces.h" />
-    <ClInclude Include="Headers\IngameArmour.h" />
-    <ClInclude Include="Headers\IngameItems.h" />
-    <ClInclude Include="Headers\IngameSpells.h" />
-    <ClInclude Include="Headers\IngameWeapons.h" />
-    <ClInclude Include="Headers\Inventory.h" />
-    <ClInclude Include="Headers\Monster.h" />
-    <ClInclude Include="Headers\myString.h" />
-    <ClInclude Include="Headers\NPC.h" />
-    <ClInclude Include="Headers\Player.h" />
-    <ClInclude Include="Headers\RandomNumberGenerator.h" />
-    <ClInclude Include="Headers\SpellsClass.h" />
-    <ClInclude Include="Headers\WeaponsClass.h" />
-    <ClInclude Include="Templates\Pair.hpp" />
-    <ClInclude Include="Templates\Vector.hpp" />
+    <ClInclude Include="Common\MyString.h" />
+    <ClInclude Include="Common\Pair.hpp" />
+    <ClInclude Include="Common\RandomNumberGenerator.h" />
+    <ClInclude Include="Common\Vector.hpp" />
+    <ClInclude Include="Creatures\Creature.h" />
+    <ClInclude Include="Creatures\Monster.h" />
+    <ClInclude Include="Creatures\Player.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Items\Armour.h" />
+    <ClInclude Include="Items\Item.h" />
+    <ClInclude Include="Items\Spell.h" />
+    <ClInclude Include="Items\Weapon.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
