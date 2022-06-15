@@ -18,3 +18,17 @@ bool Item::compareName(const char* other)
 	return name.compare(other);
 }
 
+std::ofstream& Item::writeToFile(std::ofstream& f)
+{
+	f.write((const char*)&neededLvl, sizeof(neededLvl));
+	name.writeStringToFile(f);
+	return f;
+}
+
+std::ifstream& Item::readFromFile(std::ifstream& f)
+{
+	f.read((char*)&neededLvl, sizeof(neededLvl));
+	name.readStringFromFile(f);
+	return f;
+}
+

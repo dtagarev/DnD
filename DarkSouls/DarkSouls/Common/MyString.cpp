@@ -10,21 +10,41 @@ void MyString::free()
 void MyString::copyFrom(const MyString& other)
 {
 	size = other.size;
-	arr = new char[size + 1];
+	if (size % 2 == 0)
+		capacity += 2;
+	else
+		capacity = size + 1;
+
+	arr = new char[capacity];
 	strcpy(arr, other.arr);
+}
+
+void MyString::resize()
+{
+	char* temp = new char[capacity *= 2];
+	for (size_t i = 0; i < size; i++)
+		temp[i] = arr[i];
+	if (arr != nullptr)
+		free();
+	arr = temp;
 }
 
 MyString::MyString()
 {
-	size = 1;
-	arr = new char[size];
+	capacity = 4;
+	size = 0;
+	arr = new char[capacity];
 	arr[0] = '\0';
 }
 
 MyString::MyString(const char* other)
 {
 	size = strlen(other);
-	arr = new char[size + 1];
+	if (size % 2 == 0)
+		capacity += 2;
+	else
+		capacity = size + 1;
+	arr = new char[capacity];
 	strcpy(arr, other);
 }
 
@@ -47,7 +67,11 @@ MyString& MyString::operator=(const char* other)
 {
 	free();
 	size = strlen(other);
-	arr = new char[size + 1];
+	if (size % 2 == 0)
+		capacity += 2;
+	else
+		capacity = size + 1;
+	arr = new char[capacity];
 	strcpy(arr, other);
 	return *this;
 }
@@ -57,9 +81,33 @@ MyString::~MyString()
 	free();
 }
 
+MyString& MyString::operator+=(const char* other)
+{
+	size_t length = strlen(other);
+	for (size_t i = 0; i < length; i++)
+	{
+		add(other[i]);
+	}
+	return *this;
+}
+
+void MyString::add(char element)
+{
+	if (size + 1 == capacity)
+		resize();
+	arr[size] = element;
+	size++;
+	arr[size] = '\0';
+}
+
 const size_t MyString::getSize() const
 {
 	return size;
+}
+
+char& MyString::operator[](int n)
+{
+	return arr[n];
 }
 
 void MyString::print() const
@@ -81,7 +129,11 @@ void MyString::readStringFromFile(std::ifstream& f)
 {
 	free();
 	f.read((char*)&size, sizeof(size));
-	arr = new char[size+1];
+	if (size % 2 == 0)
+		capacity += 2;
+	else
+		capacity = size + 1;
+	arr = new char[capacity];
 	f.read(arr, size);
 	arr[size] = '\0';
 }

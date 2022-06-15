@@ -5,8 +5,10 @@ class MyString
 {
 	char* arr;
 	size_t size;
+	size_t capacity;
 	void free();
 	void copyFrom(const MyString&);
+	void resize();
 public:
 	MyString();
 	MyString(const char*);
@@ -14,7 +16,10 @@ public:
 	MyString& operator=(const MyString&);
 	MyString& operator=(const char*);
 	~MyString();
+	void add(char element);
+	MyString& operator+=(const char*);
 	const size_t getSize() const;
+	char& operator[](int n);
 	void print() const;
 	bool compare(const char*);
 	void writeStringToFile(std::ofstream& f);

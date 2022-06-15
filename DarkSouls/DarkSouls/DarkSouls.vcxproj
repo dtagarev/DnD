@@ -23,7 +23,8 @@
     <ClCompile Include="Creatures\Creature.cpp" />
     <ClCompile Include="Creatures\Monster.cpp" />
     <ClCompile Include="Creatures\Player.cpp" />
-    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Game\Game.cpp" />
+    <ClCompile Include="Game\GameLevel.cpp" />
     <ClCompile Include="Items\Armour.cpp" />
     <ClCompile Include="Items\Item.cpp" />
     <ClCompile Include="Items\Spell.cpp" />
@@ -38,7 +39,8 @@
     <ClInclude Include="Creatures\Creature.h" />
     <ClInclude Include="Creatures\Monster.h" />
     <ClInclude Include="Creatures\Player.h" />
-    <ClInclude Include="Game.h" />
+    <ClInclude Include="Game\Game.h" />
+    <ClInclude Include="Game\GameLevel.h" />
     <ClInclude Include="Items\Armour.h" />
     <ClInclude Include="Items\Item.h" />
     <ClInclude Include="Items\Spell.h" />

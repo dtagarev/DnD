@@ -10,7 +10,6 @@ protected:
 	int level;
 
 	size_t maxHealth;
-	size_t maxMana;
 	double strength;
 	double health;
 	double mana;
@@ -30,7 +29,6 @@ public:
 
 	 
 	const size_t getMaxHealth() const;
-	const size_t getMaxMana() const;
 	const double getHealth() const;
 	const double getMana() const;
 	const double getStrength() const;

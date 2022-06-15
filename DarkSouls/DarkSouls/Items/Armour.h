@@ -1,6 +1,6 @@
 #pragma once
 #include "../Common/MyString.h"
-#include "Item.h"
+#include "../Items/Item.h"
 #include <fstream>
 class Armour : Item
 {

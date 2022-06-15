@@ -5,7 +5,6 @@ Monster::Monster(int lvl) : Creature()
 	health = 40 + lvl * 10;
 	maxHealth = health;
 	mana = 15 + lvl * 10;
-	maxMana = mana;
 	strength = 15 + lvl * 10;
 	addedBlockPercentageForlvl *= lvl;
 }
@@ -31,7 +30,6 @@ void Monster::lvlUp(size_t upStrength = 10, size_t upHealth = 10, size_t upMana 
 	health += upHealth;
 	maxHealth = health;
 	mana += upMana;
-	maxMana = mana;
 	strength += upStrength;
 	level += 1;
 }
