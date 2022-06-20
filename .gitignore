@@ -6,3 +6,5 @@ DarkSouls/.vs/DarkSouls/v17/.suo
 *.db-shm
 *.db-wal
 
+DarkSouls/.vs/DnD/v17/.suo
+*.ipch
