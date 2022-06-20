@@ -16,8 +16,8 @@ public:
 	const T& getFirst() const;
 	const D& getSecond() const;
 	
-	void setFirst(T& other);
-	void setSecond(D& other);
+	void setFirst(const T& other);
+	void setSecond(const D& other);
 };
 
 template <typename T, typename D>
@@ -38,12 +38,12 @@ const D& Pair<T, D>::getSecond() const
 	return second;
 }
 template <typename T, typename D>
-void Pair<T, D>::setFirst(T& other) 
+void Pair<T, D>::setFirst(const T& other) 
 {
 	first = other;
 }
 template <typename T, typename D>
-void Pair<T, D>::setSecond(D& other) 
+void Pair<T, D>::setSecond(const D& other) 
 {
 	second = other;
 }

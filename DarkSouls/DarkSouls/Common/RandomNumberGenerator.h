@@ -1,11 +1,14 @@
 #pragma once
 #include <iostream>
-size_t randomNumberGenerator(size_t first, size_t second)
+void setTimeNull()
 {
 	srand(time(NULL));
-	//return first + (rand() % (second - first + 0));
-	size_t range = second - first + 1;
-	return rand() % range + first;
+}
+int randomNumberGenerator(int first, int second)
+{
+	return first + (rand() % (second - first + 1));
+	//int range = second - first + 1;
+	//return rand() % range + first;
 	
 }
 

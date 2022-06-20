@@ -52,6 +52,7 @@
     <ProjectGuid>{39c60059-ab0a-4512-b5f3-a09196bcc846}</ProjectGuid>
     <RootNamespace>DarkSouls</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>DnD</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

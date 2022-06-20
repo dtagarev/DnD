@@ -22,6 +22,7 @@ public:
 	char& operator[](int n);
 	void print() const;
 	bool compare(const char*);
+	char* getPointerToChar() const;
 	void writeStringToFile(std::ofstream& f);
 	void readStringFromFile(std::ifstream& f);
 };

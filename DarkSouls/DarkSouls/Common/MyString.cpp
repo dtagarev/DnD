@@ -119,6 +119,10 @@ bool MyString::compare(const char* other)
 {
 	return strcmp(arr, other) == 0;
 }
+char* MyString::getPointerToChar() const
+{
+	return arr;
+}
 void MyString::writeStringToFile(std::ofstream& f)
 {
 	f.write((const char*)&size, sizeof(size));

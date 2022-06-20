@@ -5,13 +5,23 @@
 #include "../Creatures/Player.h"
 #include "../Creatures/Monster.h"
 #include "../Common/Vector.hpp"
+#include "GameLevel.h"
 
 class Game {
 private:
-public:
-	//static Vector<Weapon> weapons;
+	Player player;
+	Vector<GameLevel> allLevels;
+	//GameLevel testLvl;
+	int currentLevel = 1;
 
-	Game();
+	char move();
+	char enterChar();
+	void printLevel();
+	void fight();
+	public:
+		//static Vector<Weapon> weapons;
 
-	void play();
+		Game();
+
+		void play();
 };

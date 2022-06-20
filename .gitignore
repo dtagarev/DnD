@@ -1,0 +1,8 @@
+
+*.vsidx
+
+DarkSouls/.vs/DarkSouls/v17/.suo
+*.db
+*.db-shm
+*.db-wal
+

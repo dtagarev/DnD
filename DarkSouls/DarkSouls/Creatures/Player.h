@@ -13,23 +13,30 @@ enum Race {
 class Player : Creature
 {
 	Race race;
-	void determineRace(Race chosenRace)
+	void determineRace(int number)
 	{
-		if (chosenRace == Race::Human)
+		if (number == 1)
+			race = Race::Human;
+		else if (number == 2)
+			race = Race::Warrior;
+		else if (number == 3)
+			race = Race::Wizard;
+
+		if (race == Race::Human)
 		{
 			health = 50;
 			maxHealth = 50;
 			strength = 30;
 			mana = 20;
 		}
-		else if (chosenRace == Race::Wizard)
+		else if (race == Race::Wizard)
 		{
 			health = 50;
 			maxHealth = 50;
 			strength = 10;
 			mana = 40;
 		}
-		else if (chosenRace == Race::Warrior)
+		else if (race == Race::Warrior)
 		{
 			health = 50;
 			maxHealth = 50;
@@ -39,7 +46,8 @@ class Player : Creature
 	}
 
 public:
-	Player(Race race); // da dobavq itemite
+	Player();
+	Player(int number); // da dobavq itemite
 	double meleeAttack() override;
 	double magicAttack() override;
 	void takeDmg(double dmg) override;

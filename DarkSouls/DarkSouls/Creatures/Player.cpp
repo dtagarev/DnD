@@ -1,9 +1,13 @@
 #include "Player.h"
 
-Player::Player(Race race) : Creature()
+Player::Player() : Creature()
 {
-	this->race = race;
-	determineRace(race);
+	race = Race::Human;
+}
+
+Player::Player(int number) : Creature()
+{
+	determineRace(number);
 	weapon = Weapon("stick", 20, 0);
 	spell = Spell("Fire ball", 20, 0);
 }
